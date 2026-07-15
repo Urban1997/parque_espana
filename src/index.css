@@ -1,0 +1,18 @@
+@import "tailwindcss";
+
+#root {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+  text-align: center;
+}
+
+body{
+font-family: poppins, sans-serif;
+}
+
+.bg-header-gradient {
+  background: linear-gradient(90deg, #031724 0%, #0B598A 100%);
+}
