@@ -7,7 +7,7 @@ export default function Home() {
     <main>
       <Hero />
       <Stats />
-      {/* <sobre /> */}
+      
     </main>
   )
 }
