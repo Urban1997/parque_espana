@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { HomeContent } from "../../constants/Home";  // ← Así
 
 function useCountUp(target: number, duration = 1500, interval = 5000) {
   const [count, setCount] = useState(0);
@@ -21,7 +22,6 @@ function useCountUp(target: number, duration = 1500, interval = 5000) {
     };
 
     runAnimation();
-
     const intervalId = window.setInterval(runAnimation, interval);
 
     return () => {
@@ -53,14 +53,9 @@ function CounterItem({ value, suffix, label }: CounterItemProps) {
   );
 }
 
-const counters: CounterItemProps[] = [
-  { value: 6500, suffix: "", label: "Usuarios activos" },
-  { value: 60, suffix: "", label: "Años de historia" },
-  { value: 15, suffix: "", label: "Disciplinas deportivas" },
-  { value: 1, suffix: "M", label: "de experiencias compartidas" },
-];
-
 export default function StatsCounter() {
+  const { counters } = HomeContent.stats;
+
   return (
     <div className="mt-16 rounded-xl bg-gray-100 p-6 sm:p-8">
       <div className="grid grid-cols-2 gap-6 sm:gap-8 sm:grid-cols-4">

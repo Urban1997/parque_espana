@@ -1,15 +1,19 @@
-export const homeContent = {
+
+
+export const HomeContent = {
   hero: {
     title: "Aquí se vive el movimiento",
     description: "Deporte, cultura y comunidad en un mismo espacio.",
     buttonText: "Descubre Parque España I",
     buttonLink: "/parque-espana-1",
-    imageAlt: "Jugador de tenis y mujer con vestimenta tradicional en Parque España",
+    imageAlt:
+      "Jugador de tenis y mujer con vestimenta tradicional en Parque España",
   },
 
   stats: {
     title: "Tradición, deporte y comunidad en Puebla",
-    description: "Un espacio donde familias, cultura y bienestar se unen para crear experiencias memorables para todas las generaciones.",
+    description:
+      "Un espacio donde familias, cultura y bienestar se unen para crear experiencias memorables para todas las generaciones.",
     buttonText: "Conoce nuestras instalaciones",
     buttonLink: "/instalaciones",
     counters: [
@@ -17,6 +21,26 @@ export const homeContent = {
       { value: 60, suffix: "", label: "Años de historia" },
       { value: 15, suffix: "", label: "Disciplinas deportivas" },
       { value: 1, suffix: "M", label: "de experiencias compartidas" },
+    ],
+  },
+
+  activities: {
+    title: "Un espacio pensado para convivir y disfrutar",
+    description:
+      "Parque España Puebla es un club social, deportivo y cultural enfocado en la convivencia familiar...",
+     cards: [
+      {
+        id: 1,
+        name: "Romería",
+      },
+      {
+        id: 2,
+        name: "Natación",
+      },
+      {
+        id: 3,
+        name: "Pádel",
+      },
     ],
   },
 };

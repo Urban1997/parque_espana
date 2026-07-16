@@ -1,12 +1,12 @@
 import { Link } from "react-router-dom";
 import tenis from "@/assets/images/Home/Hero.png";
-import { homeContent } from '@/constants/Home';
+import { HomeContent } from "../../constants/Home"; 
 
 export default function Hero() {
-  const { title, description, buttonText, buttonLink, imageAlt } = homeContent.hero;
+  const { title, description, buttonText, buttonLink, imageAlt } = HomeContent.hero;
 
   return (
-    <section className="relative flex min-h-[600px] flex-col overflow-hidden bg-header-gradient text-white md:flex-row">
+    <section className="relative flex min-h-150 flex-col overflow-hidden bg-header-gradient text-white md:flex-row">
       {/* Texto: mitad izquierda */}
       <div className="z-10 flex flex-1 items-center justify-center px-6 py-16 text-center md:justify-start md:px-16 md:text-left lg:text-center">
         <div>
