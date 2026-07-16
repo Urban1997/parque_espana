@@ -1,8 +1,11 @@
 import { Link } from "react-router-dom";
-import {
-  MapPin,
-  Phone
-} from "lucide-react";
+import United_Logo from "@/assets/images/Footer/United_Logos.png";
+import Facebook from "@/assets/icons/Footer/Facebook.png";
+import Instagram from "@/assets/icons/Footer/Instagram.png";
+import X from "@/assets/icons/Footer/X.png";
+import YouTube from "@/assets/icons/Footer/YouTube.png";
+import Phone from "@/assets/icons/Footer/Phone.png";
+import Pin from "@/assets/icons/Footer/Pin.png";
 
 const columnaIzquierda = [
   { label: "¿Quiénes somos?", to: "/nosotros" },
@@ -16,6 +19,12 @@ const columnaDerecha = [
   { label: "Aviso de privacidad", to: "/aviso-de-privacidad" },
 ];
 
+const redesSociales = [
+  { icon: Facebook, href: "https://facebook.com", label: "Facebook" },
+  { icon: Instagram, href: "https://instagram.com", label: "Instagram" },
+  { icon: X, href: "https://x.com", label: "X" },
+  { icon: YouTube, href: "https://youtube.com", label: "YouTube" },
+];
 
 export default function Footer() {
   const year = new Date().getFullYear();
@@ -24,42 +33,48 @@ export default function Footer() {
     <footer className="bg-white">
       <div className="h-1 w-full bg-gradient-to-r from-purple-500 via-pink-500 to-yellow-400" />
 
-      <div className="mx-auto grid grid-cols-1 gap-10 px-6 py-10 sm:py-12 lg:grid-cols-3 lg:gap-8 max-w-6xl">
+      <div className="mx-auto grid max-w-[1890px] grid-cols-1 gap-6 px-4 py-8 sm:gap-10 sm:px-6 sm:py-10 lg:grid-cols-4 lg:gap-8 lg:px-10 lg:py-12">
+        {/* Columna 1: Patronato */}
         <div className="text-center lg:text-left">
           <h3 className="text-base font-bold text-slate-900 sm:text-lg">
             Patronato del Parque España
           </h3>
-          <p className="mt-3 text-sm text-gray-600">
+          <p className="mt-3 text-sm text-gray-600 sm:text-base">
             Tradición que une, bienestar que perdura
           </p>
 
           <div className="mt-6 flex items-center justify-center gap-3 lg:justify-start">
             <img
-              src="/images/logo1.png"
-              alt="Logo aliado 1"
-              className="h-10 w-auto object-contain"
-            />
-            <img
-              src="/images/logo2.png"
-              alt="Logo aliado 2"
-              className="h-10 w-auto object-contain"
-            />
-            <img
-              src="/images/logo3.png"
-              alt="Logo aliado 3"
-              className="h-10 w-auto object-contain"
+              src={United_Logo}
+              alt="United Logo"
+              className="h-12 w-auto object-contain sm:h-15 lg:w-70"
             />
           </div>
         </div>
 
-        <div className="text-center lg:text-left">
-          <h3 className="text-sm font-bold text-slate-900">Conoce más</h3>
-          <div className="mt-4 grid grid-cols-2 gap-x-6 gap-y-3 text-sm text-gray-700">
+        {/* Columna 2: Conoce más (lista 1) */}
+        <div className="text-center">
+          <h3 className="text-sm font-bold text-slate-900 sm:text-base">
+            Conoce más
+          </h3>
+          <div className="mt-4 flex flex-col items-center gap-3 text-sm text-gray-700 sm:text-base">
             {columnaIzquierda.map((link) => (
               <Link key={link.to} to={link.to} className="hover:text-[#0097b2]">
                 {link.label}
               </Link>
             ))}
+          </div>
+        </div>
+
+        {/* Columna 3: continuación de Conoce más (lista 2) */}
+        <div className="text-center">
+          <h3
+            className="text-sm font-bold text-transparent sm:text-base"
+            aria-hidden="true"
+          >
+            Conoce más
+          </h3>
+          <div className="mt-4 flex flex-col items-center gap-3 text-sm text-gray-700 sm:text-base">
             {columnaDerecha.map((link) => (
               <Link key={link.to} to={link.to} className="hover:text-[#0097b2]">
                 {link.label}
@@ -68,39 +83,60 @@ export default function Footer() {
           </div>
         </div>
 
+        {/* Columna 4: Contacto */}
         <div className="text-center lg:text-left">
-          <h3 className="text-sm font-bold text-slate-900">Contacto</h3>
+          <h3 className="text-sm font-bold text-slate-900 sm:text-base">
+            Contacto
+          </h3>
 
-          <div className="mt-4 flex items-start justify-center gap-2 text-sm text-gray-700 lg:justify-start">
-            <MapPin size={18} className="mt-0.5 shrink-0 text-red-600" />
-            <p className="text-left">
+          <div className="mt-4 flex items-start justify-center gap-1 text-[14px] text-gray-700 sm:text-[15px] lg:justify-start">
+            <img
+              src={Pin}
+              alt="Ubicación"
+              className="mt-0.5 h-6 w-4.5 shrink-0 "
+            />
+            <p className="">
               Av. 25 Ote. 1001, Ladrillera de Benítez, 72500
               <br />
               Heroica Puebla de Zaragoza, Pue.
             </p>
           </div>
-
-          <div className="mt-3 flex items-center justify-center gap-2 text-sm text-gray-700 lg:justify-start">
-            <Phone size={18} className="shrink-0 text-gray-600" />
+          <div className="mt-3 flex items-center justify-center gap-2 text-sm text-gray-700 sm:text-base lg:justify-start">
+            <img src={Phone} alt="Teléfono" className="h-6 w-6 shrink-0 " />
             <a href="tel:+522229175761" className="hover:text-[#0097b2]">
               +52 1 222 917 5761
             </a>
           </div>
 
           <div className="mt-4 flex items-center justify-center gap-4 lg:justify-start">
-         
+            {redesSociales.map((red) => (
+              <a
+                key={red.label}
+                href={red.href}
+                target="_blank"
+                rel="noopener noreferrer"
+                aria-label={red.label}
+                className="transition-opacity hover:opacity-80"
+              >
+                <img
+                  src={red.icon}
+                  alt={red.label}
+                  className="h-6 w-6 object-contain"
+                />
+              </a>
+            ))}
           </div>
 
-          <div className="mt-6 flex flex-wrap justify-center gap-3 lg:justify-start">
+          <div className="mt-6 flex flex-wrap justify-center gap-2 sm:gap-3 lg:justify-start">
             <Link
               to="/instalaciones/horarios"
-              className="rounded-full bg-[#043351] px-5 py-2 text-sm font-semibold text-white hover:bg-slate-800"
+              className="rounded-full bg-[#043351] px-4 py-2 text-sm font-semibold text-white hover:bg-slate-800 sm:px-5 sm:text-base"
             >
               Horarios
             </Link>
             <Link
               to="/parque-espana-2"
-              className="rounded-full bg-[#0097b2] px-5 py-2 text-sm font-semibold text-white hover:bg-sky-700"
+              className="rounded-full bg-[#0097b2] px-4 py-2 text-sm font-semibold text-white hover:bg-sky-700 sm:px-5 sm:text-base"
             >
               Ver Parque España II
             </Link>
@@ -108,7 +144,7 @@ export default function Footer() {
         </div>
       </div>
 
-      <div className="bg-slate-600 py-3 text-center text-xs text-white">
+      <div className="bg-slate-600 py-3 text-center text-sm text-white">
         Todos los Derechos Reservados Parque España {year}
       </div>
     </footer>

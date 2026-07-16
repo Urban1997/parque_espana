@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import tenis from "../assets/images/Home/Hero.png";
+import tenis from "@/assets/images/Home/Hero.png";
 
 export default function Hero() {
   return (
