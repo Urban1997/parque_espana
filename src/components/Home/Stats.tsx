@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 
-import Graphic_Element from "../assets/images/Home/Graphic_Element.png";
+import Graphic_Element from "@/assets/images/Home/Graphic_Element.png";
 
 function useCountUp(target: number, duration = 1500, interval = 5000) {
   const [count, setCount] = useState(0);
@@ -76,7 +76,7 @@ export default function Stats() {
           <img
             src={Graphic_Element}
             alt="Elemento gráfico"
-            className="hidden h-20 w-20 -mt-10 object-contain md:block lg:h-25 lg:-mt-16 lg:w-25"
+            className="hidden h-20 w-20 -mt-10 object-contain md:hidden  lg:h-25 lg:-mt-16 lg:w-25"
           />
         </div>
 
