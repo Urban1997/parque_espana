@@ -112,4 +112,6 @@ installations: {
   buttonText: "Ver instalaciones",
   buttonLink: "/instalaciones",
 }
+
+
 };
