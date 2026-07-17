@@ -6,7 +6,7 @@ import Logo from "@/assets/icons/logo.png";
 
 const mainLinks = [
   { label: "Inicio", to: "/" },
-  { label: "Nosotros", to: "/nosotros" },
+  { label: "Nosotros", to: "/about" },
   { label: "Membresías", to: "/membresias" },
 ];
 
