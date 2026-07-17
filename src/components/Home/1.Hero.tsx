@@ -1,5 +1,5 @@
 import { Link } from "react-router-dom";
-import tenis from "@/assets/images/Home/Hero.png";
+import tennis from "@/assets/images/Home/Hero.png";
 import { HomeContent } from "../../constants/Home"; 
 
 export default function Hero() {
@@ -28,7 +28,7 @@ export default function Hero() {
       {/* Imagen: mitad derecha */}
       <div className="h-75 w-full sm:h-95 md:h-auto md:flex-1">
         <img
-          src={tenis}
+          src={tennis}
           alt={imageAlt}
           className="h-full w-full object-cover object-top md:object-contain md:object-right-bottom"
         />
