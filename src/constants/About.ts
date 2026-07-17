@@ -1,14 +1,11 @@
 
 
 export const AboutContent = {
-  // hero: {
-  //   title: "Aquí se vive el movimiento",
-  //   description: "Deporte, cultura y comunidad en un mismo espacio.",
-  //   buttonText: "Descubre Parque España I",
-  //   buttonLink: "/parque-espana-1",
-  //   imageAlt:
-  //     "Jugador de tenis y mujer con vestimenta tradicional en Parque España",
-  // },
+  hero: {
+    title: "Más de seis décadas construyendo comunidad",
+    description: "Tradición, bienestar y deporte para todas las generaciones.",
+    imageAlt: "Mujeres con vestimenta tradicional en Parque España",
+  },
 
   // stats: {
   //   title: "Tradición, deporte y comunidad en Puebla",
