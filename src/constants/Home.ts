@@ -12,8 +12,14 @@ export const HomeContent = {
 
   stats: {
     title: "Tradición, deporte y comunidad en Puebla",
-    description:
-      "Un espacio donde familias, cultura y bienestar se unen para crear experiencias memorables para todas las generaciones.",
+    descriptionParts: [
+      { text: "Un espacio donde ", strong: false },
+      { text: "familias, cultura y bienestar", strong: true },
+      { text: " se unen para crear ", strong: false },
+      { text: "experiencias memorables", strong: true },
+      { text: " para todas las generaciones.", strong: false },
+    ],
+    imageAlt: "Elemento gráfico",
     buttonText: "Conoce nuestras instalaciones",
     buttonLink: "/instalaciones",
     counters: [
@@ -24,11 +30,17 @@ export const HomeContent = {
     ],
   },
 
+
   activities: {
     title: "Un espacio pensado para convivir y disfrutar",
-    description:
-      "Parque España Puebla es un club social, deportivo y cultural enfocado en la convivencia familiar...",
-     cards: [
+    descriptionParts: [
+      { text: "Parque España Puebla", strong: true },
+      { text: " es un club social, deportivo y cultural enfocado en la convivencia familiar, el bienestar y la recreación. Contamos con ", strong: false,},
+      { text: "instalaciones deportivas, actividades culturales",strong: true,},
+      { text: " y espacios diseñados para que personas de todas las edades disfruten de una comunidad activa, moderna y llena de tradición.",strong: false,},
+    ],
+
+    cards: [
       {
         id: 1,
         name: "Romería",
@@ -43,4 +55,61 @@ export const HomeContent = {
       },
     ],
   },
+
+
+  experience: {
+  title: "Vive una experiencia integral",
+  items: [
+    {
+      id: 1,
+      title: "Deporte",
+      description: "actividades para un estilo de vida activo",
+    },
+    {
+      id: 2,
+      title: "Comunidad",
+      description: "Espacios para convivir y fortalecer vínculos",
+    },
+    {
+      id: 3,
+      title: "Bienestar",
+      description: "Ambientes seguros y cómodos para toda la familia",
+    },
+    {
+      id: 4,
+      title: "Cultura y tradición",
+      description: "Eventos y actividades que preservan nuestras raíces",
+    },
+  ],
+},
+
+
+
+installations: {
+  title: "Instalaciones pensadas para toda la familia",
+  cards: [
+    {
+      id: 1,
+      name: "Cafetería"
+    },
+    {
+      id: 2,
+      name: "Gimnasio"
+    },
+    {
+      id: 3,
+      name: "Alberca semiólimpica"
+    },
+    {
+      id: 4,
+      name: "Tenis"
+    },
+    {
+      id: 5,
+      name: "Jardines"
+    },
+  ],
+  buttonText: "Ver instalaciones",
+  buttonLink: "/instalaciones",
+}
 };
