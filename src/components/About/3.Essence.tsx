@@ -1,6 +1,9 @@
 import essenceBg from "@/assets/images/About/essence.png";
+import { AboutContent } from "../../constants/About"; 
 
 export default function Essence() {
+    const { title, text1, text2 } = AboutContent.essence;
+
   return (
     <section className="w-full bg-[#F2F4F7]">
     <div
@@ -13,21 +16,16 @@ export default function Essence() {
 
             {/* Título centrado dentro de esta columna de 70% */}
             <h2 className="text-center text-2xl font-extrabold leading-tight lg:text-4xl">
-                Nuestra esencia
+                {title}
             </h2>
 
             {/* Texto a la izquierda, más grande */}
             <p className="mt-6 text-justify text-lg lg:text-[26px]">
-                Nacimos como un punto de encuentro para las familias de origen
-                español en Puebla y hemos evolucionado hasta convertirnos en
-                una comunidad abierta donde tradición, bienestar y convivencia
-                forman parte de la vida diaria.
+                {text1}
             </p>
 
             <p className="mt-6 text-justify text-lg lg:text-[26px]">
-                A través del deporte, cultura y recreación, fomentamos espacios
-                que fortalecen los lazos entre generaciones y promueven una vida
-                activa para todas las edades.
+                {text2}
             </p>
         </div>
     </div>
