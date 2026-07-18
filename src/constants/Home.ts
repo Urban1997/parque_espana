@@ -1,3 +1,4 @@
+import { image } from "framer-motion/client";
 
 
 export const HomeContent = {
@@ -111,7 +112,32 @@ installations: {
   ],
   buttonText: "Ver instalaciones",
   buttonLink: "/instalaciones",
-}
+},
+
+  
+app: {
+  title: "Tu parque desde cualquier lugar",
+  description: "Consulta información, realiza pagos, reserva amenidades y accede a los servicios del club desde la app móvil",
+  googlePlayLabel: "Google Play",
+  googlePlayAlt: "Google Play",
+  appStoreLabel: "App Store",
+  appStoreAlt: "App Store",
+},
 
 
+
+  experiencePark: {
+   title: "Vive la experiencia Parque España",
+    description: "Disfruta instalaciones deportivas, actividades culturales y espacios diseñados para compartir momentos inolvidables en familia.",
+    buttons: {
+      activities: {
+        label: "Conocer actividades",
+        to: "/actividades",
+      },
+      memberships: {
+        label: "Membresías",
+        to: "/membresias",
+      },
+    },
+  },
 };

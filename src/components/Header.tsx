@@ -2,7 +2,7 @@ import { useState } from "react";
 import { Link } from "react-router-dom";
 import { Menu, X, ChevronDown } from "lucide-react";
 
-import Logo from "@/assets/icons/logo.png";
+import Logo from "@/assets/icons/Logo.webp";
 
 const mainLinks = [
   { label: "Inicio", to: "/" },
