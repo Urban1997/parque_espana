@@ -12,7 +12,7 @@ export default function App() {
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
         <div className="grid grid-cols-1 md:grid-cols-2 gap-0 md:gap-12 items-end">
           <AnimFadeUp className="text-white pl-0 mb-19">
-            <h2 className="text-2xl sm:text-2xl md:text-3xl font-extrabold mb-8 leading-tight text-center md:text-left">
+            <h2 className="text-2xl sm:text-2xl md:text-3xl font-extrabold mb-8 leading-tight text-center md:text-left bg-red-500">
               {title}
             </h2>
 
