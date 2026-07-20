@@ -1,4 +1,4 @@
-import essenceBg from "@/assets/images/About/essence.png";
+import essenceBg from "@/assets/images/About/essence.webp";
 import { AboutContent } from "../../constants/About";
 
 export default function Essence() {
