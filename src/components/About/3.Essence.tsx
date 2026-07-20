@@ -9,13 +9,13 @@ export default function Essence() {
 
       {/* Imagen: solo visible en celular */}
       <div
-        className="h-[280px] w-full bg-cover bg-[right_center] md:hidden"
-        style={{ backgroundImage: `url(${essenceBg})` }}
+        className="h-70 w-full bg-cover bg-[right_center] md:hidden"
+        style={{ backgroundImage: `url(${essenceBg})`  }}
       />
 
       {/* Layout de tablet/escritorio: imagen de fondo con texto superpuesto */}
       <div
-        className="relative hidden w-full md:flex md:h-[480px] md:items-start md:bg-cover md:bg-center lg:h-[620px]"
+        className="relative hidden w-full md:flex md:h-120 md:items-start md:bg-cover md:bg-center lg:h-155"
         style={{ backgroundImage: `url(${essenceBg})` }}
       >
         <div className="relative z-10 w-full px-6 pt-8 text-[#3C3C3C] md:w-[70%] md:pl-10 md:pr-8 md:pt-10 lg:pl-30 lg:pr-28 lg:pt-20">

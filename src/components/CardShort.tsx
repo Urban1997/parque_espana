@@ -2,17 +2,18 @@ interface CardProps {
   image: string;
   title: string;
   text: string;
+  imageAlt?: string;
 }
 
-export default function Card({ image, title, text }: CardProps) {
+export default function Card({ image, title, text, imageAlt }: CardProps) {
   return (
-    <div className="flex h-[320px] w-full flex-col overflow-hidden rounded-2xl bg-[#3264A2] shadow-lg md:h-full">
+    <div className="flex h-80 w-full flex-col overflow-hidden rounded-2xl bg-[#3264A2] shadow-lg md:h-full">
 
       {/* Imagen: 60% de la altura */}
       <div className="relative h-[60%] w-full">
         <img
           src={image}
-          alt={title}
+          alt={imageAlt}
           className="h-full w-full object-cover"
         />
       </div>
