@@ -25,6 +25,13 @@ export const AboutContent = {
     title: "Nuestra esencia",
     text1: "Nacimos como un punto de encuentro para las familias de origen español en Puebla y hemos evolucionado hasta convertirnos en una comunidad abierta donde tradición, bienestar y convivencia forman parte de la vida diaria.",
     text2: "A través del deporte, cultura y recreación, fomentamos espacios que fortalecen los lazos entre generaciones y promueven una vida activa para todas las edades."
+  },
+
+  missionVision: {
+    mission: {
+      title: "MISIÓN",
+      
+    }
   }
 
 };
