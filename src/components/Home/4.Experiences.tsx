@@ -26,7 +26,7 @@ export default function ExperienceBanner() {
   return (
     <section className="bg-[#F2F4F7] py-12 sm:py-16 md:py-20 lg:py-24">
       <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#3C3C3C] text-center mb-6 sm:mb-8">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#3C3C3C] text-center mb-6 sm:mb-8 md:mb-20">
           {title}
         </h2>
 

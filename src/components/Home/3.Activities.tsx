@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import Cards from "../Cards";
+import Cards from "../CardsImages";
 import { HomeContent } from "../../constants/Home";
 
 export default function ActivitiesBanner() {

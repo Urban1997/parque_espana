@@ -1,6 +1,6 @@
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
-import Cards from "../Cards";
+import Cards from "../CardsImages";
 import { HomeContent } from "../../constants/Home";
 
 export default function Installations() {
@@ -74,7 +74,7 @@ export default function Installations() {
         <div className="mt-12 text-center">
           <Link
             to={buttonLink}
-            className="inline-block rounded-full bg-[#0097b2] px-8 py-3 text-sm sm:text-base font-semibold text-white hover:bg-sky-700 transition-colors"
+            className="inline-block rounded-lg bg-[#0097b2] px-8 py-3 text-sm sm:text-base font-semibold text-white hover:bg-sky-700 transition-colors"
           >
             {buttonText}
           </Link>
