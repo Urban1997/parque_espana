@@ -16,48 +16,36 @@ export default function Essence() {
 
       {/* Layout de tablet/escritorio: imagen de fondo con texto superpuesto */}
       <div
-        className="relative hidden w-full md:flex md:h-120 md:items-start md:bg-cover md:bg-center"
+        className="relative mx-auto hidden w-full max-w-[2200px] md:flex md:h-[65vh] md:min-h-[480px] md:max-h-[520px] md:items-start md:bg-cover md:bg-center"
         style={{ backgroundImage: `url(${JoinOutStoru})` }}
       >
         <div className="relative z-10 w-full px-6 pt-8 text-white md:w-[65%] md:pl-10 md:pr-8 md:pt-10 lg:pl-30 lg:pr-28 lg:pt-20">
-          <h2 className="text-center text-xl font-extrabold leading-tight md:text-2xl lg:text-3xl pt-6">
+          <h2 className="pt-6 text-center text-xl font-extrabold leading-tight md:text-2xl lg:text-3xl">
             {title}
           </h2>
           <p className="mt-6 text-center text-sm md:mt-6 md:text-base lg:text-[23px]">
             {text}
           </p>
           <div className="mt-14 flex justify-center gap-16">
-            <ButtonLink
-              to=""
-              color="#029FD4"
-              text="Conocer instalaciones"
-              size="xl"
-            />
-            
-            <ButtonLink
-              to=""
-              color="#0097B2"
-              text="Ver membresías"
-              size="xl"
-            />
+            <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size="xl" />
+            <ButtonLink to="" color="#0097B2" text="Ver membresías" size="xl" />
           </div>
-          
-
         </div>
       </div>
 
-      {/* Texto: solo visible en celular */}
-      {/* <div className="px-6 py-8 text-white md:hidden">
+      {/* Texto y botones: solo visible en celular */}
+      <div className="px-6 py-8 text-[#3C3C3C] md:hidden">
         <h2 className="text-center text-2xl font-extrabold leading-tight">
           {title}
         </h2>
-        <p className="mt-6 text-justify text-lg">
-          {text1}
+        <p className="mt-6 text-center text-base">
+          {text}
         </p>
-        <p className="mt-6 text-justify text-lg">
-          {text2}
-        </p>
-      </div> */}
+        <div className="mt-8 flex flex-col items-center gap-4">
+          <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size="md" />
+          <ButtonLink to="" color="#0097B2" text="Ver membresías" size="md" />
+        </div>
+      </div>
 
     </section>
   );

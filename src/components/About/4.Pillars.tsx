@@ -13,7 +13,7 @@ export default function Pillars() {
         Nuestros pilares
       </h2>
 
-      <div className="mt-16 flex flex-col gap-6 md:h-105 md:flex-row lg:h-125">
+      <div className="mt-12 flex flex-col gap-6 md:h-105 md:flex-row lg:h-135">
         <Card
           image={pillar1Img}
           title={pillars[0].title}
