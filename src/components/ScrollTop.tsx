@@ -1,9 +1,16 @@
 import { useState, useEffect } from "react";
 import { motion, AnimatePresence } from "framer-motion";
+import { useLocation } from "react-router-dom";
 import ScrollIcon from "@/assets/icons/Scroll.webp";
 
 export default function ScrollTop() {
   const [isVisible, setIsVisible] = useState(false);
+  const { pathname } = useLocation();
+
+  // Resetea el scroll al inicio cada vez que cambia de página
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   useEffect(() => {
     const toggleVisibility = () => {

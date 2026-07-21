@@ -22,3 +22,25 @@ font-family: poppins, sans-serif;
     --tw-gradient-position: to right in oklab;
     background-image: linear-gradient(var(--tw-gradient-stops));
 }
+
+
+/* index.css */
+
+.benefits-line-gradient {
+  background: linear-gradient(
+    to right,
+    #bcbcbc 0%,
+    #f2f4f7 18%,
+    #bcbcbc 28%,
+    #f2f4f7 38%,
+    #bcbcbc 48%,
+    #f2f4f7 59%,
+    #bcbcbc 70%,
+    #f2f4f7 81%,
+    #bcbcbc 100%
+  );
+}
+
+.card-long-gradient {
+  background: linear-gradient(135deg, #041f31 0%, #0c6097 100%);
+}
