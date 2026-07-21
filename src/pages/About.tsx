@@ -4,6 +4,7 @@ import Hero from '../components/About/1.Hero'
 import Essence from "../components/About/3.Essence";
 import Pillars from "../components/About/4.Pillars";
 import MissionVision from "../components/About/6.MissionVision";
+import JoinOurStory from "../components/About/7.JoinOurStory";
 
 export default function About() {
     return (
@@ -13,6 +14,7 @@ export default function About() {
             <Essence />
             <Pillars />
             <MissionVision />
+            <JoinOurStory />
         </main>
     )
 }

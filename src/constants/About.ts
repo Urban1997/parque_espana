@@ -57,6 +57,11 @@ export const AboutContent = {
       title: "VISIÓN",
       text: "«Ser el epicentro social, cultural y deportivo de Puebla, reconocido por fusionar tradición e innovación en beneficio de toda la comunidad, transformándose en un modelo de integración y bienestar que inspire a futuras generaciones.»"
     }
+  },
+
+  joinUsStory: {
+    title: "Forma parte de nuestra historia",
+    text: "Más de seis décadas después, seguimos construyendo un espacio donde tradición, deporte y comunidad se unen para crear experiencias que trascienden generaciones."
   }
 
 };
