@@ -39,5 +39,15 @@ const timelineItems = [
 ];
 
 export default function History() {
-  return <Timeline items={timelineItems} />;
+  return (
+    <section className="px-6 py-16 md:px-10 lg:px-26">
+
+      <h2 className="text-center text-3xl font-extrabold lg:text-4xl">
+        Nuestra historia
+      </h2>
+
+      <Timeline items={timelineItems} />
+
+    </section>
+  );
 }
