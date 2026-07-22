@@ -1,6 +1,6 @@
 import essenceBg from "@/assets/images/About/essence.webp";
-import personImg from "@/assets/images/About/EssenceWithOutLine.png";
-import waveImg from "@/assets/images/About/EssenceLines.png";
+import personImg from "@/assets/images/About/EssenceWithOutLine.webp";
+import waveImg from "@/assets/images/About/EssenceLines.webp";
 import { AboutContent } from "../../constants/About";
 
 export default function Essence() {

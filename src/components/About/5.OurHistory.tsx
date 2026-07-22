@@ -1,9 +1,9 @@
 import Timeline from "../Timeline";
-import img1940 from "@/assets/images/About/1940.png";
-import img1958 from "@/assets/images/About/1958.png";
-import img1961 from "@/assets/images/About/1961.png";
-import imgGrowth from "@/assets/images/About/Growth.png";
-import imgPresent from "@/assets/images/About/Present.png";
+import img1940 from "@/assets/images/About/1940.webp";
+import img1958 from "@/assets/images/About/1958.webp";
+import img1961 from "@/assets/images/About/1961.webp";
+import imgGrowth from "@/assets/images/About/Growth.webp";
+import imgPresent from "@/assets/images/About/Present.webp";
 
 const timelineItems = [
   {
