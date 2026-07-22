@@ -41,9 +41,10 @@ export default function Essence() {
         <p className="mt-6 text-center text-base">
           {text}
         </p>
-        <div className="mt-8 flex flex-col items-center gap-4">
-          <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size="md" />
-          <ButtonLink to="" color="#0097B2" text="Ver membresías" size="md" />
+        <div className="mt-8 flex flex-col items-center gap-4 text-white">
+          <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size={{ base: "sm", md: "md", lg: "lg" }} />
+          <ButtonLink to="" color="#0097B2" text="Ver membresías" size={{ base: "sm", md: "md", lg: "lg" }} />
+          
         </div>
       </div>
 

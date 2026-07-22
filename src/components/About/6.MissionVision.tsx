@@ -6,9 +6,9 @@ import { AboutContent } from "../../constants/About";
 export default function MissionVision() {
     const { mission, vision } = AboutContent.missionVision;
     return (
-        <section className="px-6 py-16 md:px-10 lg:px-26">
+        <section className="px-6 py-26 md:px-10 lg:px-26">
 
-            <div className="mx-auto mt-16 flex max-w-[1400px] flex-col items-start gap-8 md:flex-row">
+            <div className="mx-auto mt-40 flex max-w-[1400px] flex-col items-start gap-8 md:flex-row">
                 <CardBadge
                   image={missionImg}
                   imagePosition="top-left"
