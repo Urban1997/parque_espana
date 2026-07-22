@@ -8,7 +8,7 @@ export const MembershipsContent = {
     graphicImageAlt: "Ícono decorativo de la sección de membresías",
   },
 
-  
+
 
     benefits: {
     title: "Disfruta de nuestros beneficios",
@@ -69,5 +69,23 @@ export const MembershipsContent = {
         buttonLink: "/contacto?membresia=individual-solidaria",
       },
     ],
+  },
+
+
+    steps: {
+    title: "¿Cómo formar parte de Parque España?",
+    items: [
+      { id: 1, text: "Identifica la membresía que más se adapte a ti" },
+      { id: 2, text: "Contacta a nuestro equipo" },
+      { id: 3, text: "Completa tu proceso de afiliación" },
+      { id: 4, text: "Disfruta de esta gran comunidad" },
+    ],
+  },
+
+    joinUs: {
+    title: "¿Listo para formar parte de Parque España Puebla?",
+    description: "Conoce más sobre las membresías y descubre todo lo que nuestra comunidad tiene para ofrecerte",
+    buttonText: "Solicitar información",
+    buttonLink: "/contacto",
   },
 };

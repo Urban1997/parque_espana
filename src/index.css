@@ -44,3 +44,22 @@ font-family: poppins, sans-serif;
 .card-long-gradient {
   background: linear-gradient(135deg, #041f31 0%, #0c6097 100%);
 }
+
+@utility wrap-100 {
+  width: 100%;
+}
+
+@utility wrap-90 {
+  padding-left: 5%;
+  padding-right: 5%;
+}
+
+@utility wrap-80 {
+  padding-left: 10%;
+  padding-right: 10%;
+}
+
+@utility wrap-70 {
+  padding-left: 15%;
+  padding-right: 15%;
+}
