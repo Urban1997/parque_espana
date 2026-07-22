@@ -8,7 +8,7 @@ export default function Hero() {
   const { title, description, buttonText, buttonLink, imageAlt } =  HomeContent.hero;
 
   return (
-    <section className="relative flex  bg-header-gradient min-h-150 flex-col overflow-hidden  text-white md:flex-row content-100">
+    <section className="relative flex  bg-header-gradient min-h-150 flex-col overflow-hidden  text-white md:flex-row wrap-100">
       {/* Texto: mitad izquierda */}
       <div className="z-10 flex flex-1 items-center justify-center px-6 py-16 text-center md:justify-start md:px-16 md:text-left lg:text-center">
         <div>
@@ -19,7 +19,7 @@ export default function Hero() {
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-4">
-            <p className="text-lg text-white/90">{description}</p>
+            <p className="text-xl text-white">{description}</p>
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-8">

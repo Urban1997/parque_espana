@@ -59,6 +59,12 @@ font-family: poppins, sans-serif;
   padding-right: 10%;
 }
 
+
+@utility wrap-75 {
+  padding-left: 12.5%;
+  padding-right: 12.5%;
+}
+
 @utility wrap-70 {
   padding-left: 15%;
   padding-right: 15%;

@@ -43,12 +43,12 @@ function CounterItem({ value, suffix, label }: CounterItemProps) {
   const { count } = useCountUp(value);
 
   return (
-    <div className="text-center">
-      <p className="text-2xl font-bold text-[#0097b2] sm:text-3xl md:text-4xl">
+    <div className="text-center text-[#3C3C3C]">
+      <p className="text-[24px] font-bold text-[#0097b2] sm:text-[26px] lg:w-full lg:text-[32px]">
         +{count}
         {suffix}
       </p>
-      <p className="mt-1 text-sm text-black sm:text-base">{label}</p>
+      <p className="mt-2 text-[16px]  sm:text-[18px] lg:w-full lg:text-[21px] ">{label}</p>
     </div>
   );
 }
@@ -57,7 +57,7 @@ export default function StatsCounter() {
   const { counters } = HomeContent.stats;
 
   return (
-    <div className="mt-16 rounded-xl bg-gray-100 p-6 sm:p-8">
+        <div className="mt-20 sm:p-8 -mx-[15%] wrap-80">
       <div className="grid grid-cols-2 gap-6 sm:gap-8 sm:grid-cols-4">
         {counters.map((counter) => (
           <CounterItem key={counter.label} {...counter} />
