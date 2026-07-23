@@ -1,4 +1,5 @@
 import { Link } from "react-router-dom";
+import { useState } from "react";
 
 type ButtonSize = "sm" | "md" | "lg" | "xl";
 type Breakpoint = "base" | "sm" | "md" | "lg" | "xl";
@@ -9,6 +10,8 @@ interface ButtonProps {
   color: string;
   to: string;
   size?: ButtonSize | ResponsiveSize;
+  hover?: boolean;
+  hoverColor?: string;
 }
 
 // Todas las clases están escritas completas y literales
@@ -55,12 +58,25 @@ function resolveSizeClasses(size: ButtonSize | ResponsiveSize): string {
     .join(" ");
 }
 
-export default function Button({ text, color, to, size = "md" }: ButtonProps) {
+export default function Button({
+  text,
+  color,
+  to,
+  size = "md",
+  hover = false,
+  hoverColor,
+}: ButtonProps) {
+  const [isHovered, setIsHovered] = useState(false);
+
+  const backgroundColor = hover && isHovered && hoverColor ? hoverColor : color;
+
   return (
     <Link
       to={to}
-      className={`inline-block font-semibold transition ${resolveSizeClasses(size)}`}
-      style={{ backgroundColor: color }}
+      className={`inline-block font-semibold transition-colors ${resolveSizeClasses(size)}`}
+      style={{ backgroundColor }}
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
     >
       {text}
     </Link>
