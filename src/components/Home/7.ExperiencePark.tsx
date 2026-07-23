@@ -7,7 +7,7 @@ export default function ParkExperience() {
   const { title, description, buttons } = HomeContent.experiencePark;
 
   return (
-    <section className="bg-[#f5f5f5] py-16 sm:py-20 md:py-28 lg:py-32">
+    <section className="bg-[#f5f5f5] mt-20 lg:mt-40">
       <div className="mx-auto max-w-5xl px-4 sm:px-6 lg:px-8">
         <div className="flex flex-col items-center text-center">
           {/* Logo */}

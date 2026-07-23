@@ -11,29 +11,29 @@ export default function ExperienceBanner() {
   const images = [Racket, Group, Star, Flags];
 
   return (
-    <section className="bg-[#F2F4F7] py-12 sm:py-16 md:py-20 lg:py-24">
-      <div className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
+    <section className="bg-[#F2F4F7] mt-20 lg:mt-40">
+      <div className="warp-90 sm:wrap-80 lg:wrap-75">
         <AnimFadeUp>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#3C3C3C] text-center mb-6 sm:mb-8 md:mb-20">
+          <h2 className="font-extrabold text-[#3C3C3C] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
             {title}
           </h2>
         </AnimFadeUp>
 
-        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4">
+        <div className="grid grid-cols-1 gap-6 sm:grid-cols-2 md:gap-8 lg:grid-cols-4 ">
           {items.map((item, index) => (
-            <AnimScale key={item.id} className="text-center">
+            <AnimScale key={item.id} className="text-center mt-10 lg:mt-16">
               <img
                 src={images[index]}
                 alt={item.title}
                 loading="lazy"
-                className="h-14 sm:h-16 md:h-20 lg:h-24 w-auto mx-auto mb-4 sm:mb-6 object-contain"
+                className="h-14 sm:h-16  lg:h-24 w-auto mx-auto mb-4 sm:mb-6 object-contain"
               />
 
-              <h3 className="text-base sm:text-lg md:text-xl font-bold text-[#3C3C3C] mb-2 sm:mb-3">
+              <h3 className="text-[16px] font-semibold mb-3 text-black sm:text-[18px]   lg:w-full lg:text-[21px] lg:mb-5 lg:font-semibold">
                 {item.title}
               </h3>
 
-              <p className="text-sm sm:text-base md:text-lg text-[#3C3C3C] leading-relaxed">
+              <p className=" text-[16px]  text-black  sm:text-[18px] lg:w-full lg:text-[21px] lg:mb1">
                 {item.description}
               </p>
             </AnimScale>

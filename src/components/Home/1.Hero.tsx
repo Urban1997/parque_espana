@@ -13,13 +13,13 @@ export default function Hero() {
       <div className="z-10 flex flex-1 items-center justify-center px-6 py-16 text-center md:justify-start md:px-16 md:text-left lg:text-center">
         <div>
           <AnimFadeUp>
-            <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+            <h1 className=" font-bold leading-tight text-[26px] sm:text-[24px] lg:text-[45px]">
               {title}
             </h1>
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-4">
-            <p className="text-xl text-white">{description}</p>
+            <p className="text-[16px] sm:text-[20px] lg:text-[22px] text-white">{description}</p>
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-8">
@@ -27,8 +27,9 @@ export default function Hero() {
               text={buttonText}
               to={buttonLink}
               color="#B20026"
-              size="md"
+              size={{base: "sm", sm: "sm", lg:"lg"}}
             />
+           
           </AnimFadeUp>
         </div>
       </div>

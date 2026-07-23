@@ -57,7 +57,7 @@ export default function StatsCounter() {
   const { counters } = HomeContent.stats;
 
   return (
-        <div className="mt-20 sm:p-8 -mx-[15%] wrap-80">
+        <div className="mt-20 sm:p-8 lg:-mx-[15%] ">
       <div className="grid grid-cols-2 gap-6 sm:gap-8 sm:grid-cols-4">
         {counters.map((counter) => (
           <CounterItem key={counter.label} {...counter} />
