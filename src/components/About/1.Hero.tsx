@@ -13,7 +13,7 @@ export default function Hero() {
           <img
             src={hero}
             alt={imageAlt}
-            className="w-[90%] max-w-[220px] object-contain lg:w-auto lg:h-[90%] lg:max-w-none"
+            className="max-w-55 object-contain lg:w-auto lg:h-[90%] lg:max-w-none"
           />
         </div>
 
@@ -21,11 +21,11 @@ export default function Hero() {
         <div className="flex w-full items-center justify-center px-6 py-8 lg:flex-1 lg:h-full lg:px-0 lg:py-0">
           <div className="w-full rounded-3xl bg-gradient-to-r from-[#031826] to-[#073D5F] px-8 py-10 shadow-xl lg:rounded-none lg:rounded-l-[70px] lg:py-28">
 
-            <h1 className="text-left! ml-5 text-lg font-bold leading-tight lg:text-4xl">
+            <h1 className="text-left! ml-5 text-xl md:text-2xl font-bold leading-tight lg:text-4xl">
               {title}
             </h1>
 
-            <p className="text-left! ml-5 mt-6 max-w-3xl text-lg text-white/90 lg:text-2xl">
+            <p className="text-left! ml-5 mt-6 max-w-3xl text-base md:text-lg text-white/90 lg:text-2xl">
               {description}
             </p>
           </div>
