@@ -8,18 +8,18 @@ export default function Hero() {
   const { title, description, buttonText, buttonLink, imageAlt } =  HomeContent.hero;
 
   return (
-    <section className="relative flex  bg-header-gradient min-h-150 flex-col overflow-hidden  text-white md:flex-row content-100">
+    <section className="relative flex  bg-header-gradient min-h-150 flex-col overflow-hidden  text-white md:flex-row wrap-100">
       {/* Texto: mitad izquierda */}
       <div className="z-10 flex flex-1 items-center justify-center px-6 py-16 text-center md:justify-start md:px-16 md:text-left lg:text-center">
         <div>
           <AnimFadeUp>
-            <h1 className="text-3xl font-bold leading-tight sm:text-4xl md:text-5xl">
+            <h1 className=" font-bold leading-tight text-[26px] sm:text-[24px] lg:text-[45px]">
               {title}
             </h1>
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-4">
-            <p className="text-lg text-white/90">{description}</p>
+            <p className="text-[16px] sm:text-[20px] lg:text-[22px] text-white">{description}</p>
           </AnimFadeUp>
 
           <AnimFadeUp className="mt-8">
@@ -27,8 +27,9 @@ export default function Hero() {
               text={buttonText}
               to={buttonLink}
               color="#B20026"
-              size="md"
+              size={{base: "sm", sm: "sm", lg:"lg"}}
             />
+           
           </AnimFadeUp>
         </div>
       </div>

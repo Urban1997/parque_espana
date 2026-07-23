@@ -1,37 +1,32 @@
 import Cards from "../CardsImages";
+import Carousel from "../Carousel";
 import { HomeContent } from "../../constants/Home";
-import { AnimFadeUp, AnimScale } from "../Animations";
+import { AnimFadeUp } from "../Animations";
 
 export default function Activities() {
   const { title, descriptionParts, cards } = HomeContent.activities;
 
   return (
-    <section className="bg-[#F2F4F7] py-12 sm:py-16 md:py-20">
-      <div className="mx-auto max-w-5xl px-4 sm:px-6">
+    <section className="bg-[#F2F4F7] mt-20 lg:mt-40">
+      <div className="wrap-90 sm:wrap-80 lg:wrap-75">
         <AnimFadeUp>
-          <h2 className="text-2xl sm:text-3xl md:text-4xl font-extrabold text-[#3C3C3C] text-center mb-6 sm:mb-8">
+          <h2 className="font-extrabold text-[#3C3C3C] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
             {title}
           </h2>
         </AnimFadeUp>
 
-        <AnimFadeUp className="mb-12 sm:mb-16">
-          <p className="text-sm sm:text-base md:text-lg text-[#3C3C3C] text-justify leading-relaxed">
+        <AnimFadeUp className="mt-10 lg:mt-16">
+          <p className="text-[16px] text-justify sm:text-[18px]  sm:text-justify lg:text-[28px] lg:text-justify text-[#3C3C3C]">
             {descriptionParts.map((part, i) =>
-              part.strong ? (
-                <strong key={i}>{part.text}</strong>
-              ) : (
-                part.text
-              )
+              part.strong ? <strong key={i}>{part.text}</strong> : part.text,
             )}
           </p>
         </AnimFadeUp>
 
-        <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 justify-items-center">
-          {cards.map((item) => (
-            <AnimScale key={item.id} className="w-full max-w-75 sm:max-w-none">
-              <Cards name={item.name} />
-            </AnimScale>
-          ))}
+        {/* Sin wrap extra: hereda el ancho ya definido por el padre */}
+
+        <div className="mt-16 -mx-[5%] sm:-mx-[10%] lg:-mx-[12.5%] wrap-90">
+          <Carousel items={cards} />
         </div>
       </div>
     </section>

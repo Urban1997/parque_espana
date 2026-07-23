@@ -4,7 +4,7 @@ import { AnimHoverScale, AnimStaggerItem } from "./Animations";
 export default function Card({ name }: any) {
   return (
     <AnimStaggerItem>
-      <AnimHoverScale className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group">
+     <AnimHoverScale className="relative aspect-square rounded-2xl overflow-hidden cursor-pointer group">
         <div className="w-full h-full bg-gray-300 " />
         <motion.div
           className="absolute inset-0 bg-black/40 flex items-end justify-center p-4"

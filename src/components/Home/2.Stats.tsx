@@ -9,12 +9,11 @@ export default function StatsBanner() {
     HomeContent.stats;
 
   return (
-    <section className="bg-[#F2F4F7] py-16 mt-16">
-      {/* @container activa cqw para todo lo de adentro */}
-      <div className="wrap-90 lg:wrap-70">
+    <section className="bg-[#F2F4F7] mt-20 lg:mt-40">
+      <div className="wrap-90 sm:wrap-80 lg:wrap-70">
         <div className="flex w-full flex-wrap items-center justify-center gap-2 sm:gap-3">
-          <AnimFadeUp className="w-full flex-1 min-w-0">
-            <h2 className="font-extrabold text-[#004aad] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
+          <AnimFadeUp>
+            <h2 className="w-full font-extrabold text-[#004aad] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
               {title}
             </h2>
           </AnimFadeUp>
@@ -28,8 +27,8 @@ export default function StatsBanner() {
           </AnimScale>
         </div>
 
-        <AnimFadeUp className="mx-auto mt-16 w-full">
-          <p className="text-[16px] text-justify sm:text-[18px]  sm:text-center lg:text-[28px] lg:text-center text-[#3C3C3C]">
+        <AnimFadeUp className="mt-10 lg:mt-16">
+          <p className="text-[16px] text-justify sm:text-[18px] sm:text-center lg:text-[28px] lg:text-center text-[#3C3C3C]">
             {descriptionParts.map((part, i) =>
               part.strong ? <strong key={i}>{part.text}</strong> : part.text,
             )}
@@ -37,7 +36,9 @@ export default function StatsBanner() {
         </AnimFadeUp>
 
         <AnimFadeUp className="mt-8 text-white">
-        <ButtonLink text={buttonText} to={buttonLink} color="#004aad" size={{base: "md", sm: "lg"}} />
+        <ButtonLink text={buttonText} to={buttonLink} 
+        color="#0097b2" 
+        size={{base: "sm", sm: "sm", lg:"lg"}} />
    
         </AnimFadeUp>
 
