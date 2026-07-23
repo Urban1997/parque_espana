@@ -36,12 +36,12 @@ export default function App() {
             </div>
           </AnimFadeUp>
 
-          <AnimSlideRight className="flex justify-center sm:justify-end -mb-20 sm:-mb-32 lg:-mb-40">
+          <AnimSlideRight className="flex justify-center sm:justify-end  sm:-mb-25 lg:-mb-32">
             <img
               src={Mobile}
               alt="App móvil"
               loading="lazy"
-              className="w-72 sm:w-full lg:w-[520px] max-w-full object-contain"
+              className="w-72 sm:w-full lg:w-130 max-w-full object-contain"
             />
           </AnimSlideRight>
         </div>

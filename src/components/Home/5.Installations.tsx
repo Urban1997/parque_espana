@@ -21,7 +21,7 @@ export default function Installations() {
               {/* Primera fila */}
               <div className="grid grid-cols-1 sm:grid-cols-3 lg:grid-cols-3 gap-6 w-full max-w-5xl justify-items-center">
                 {cardsProps.slice(0, 3).map((props) => (
-                  <AnimScale key={props.key} className="w-full max-w-68 sm:max-w-none">
+                  <AnimScale key={props.key} className="w-full max-w-65 sm:max-w-none">
                     <FlipCard {...props} />
                   </AnimScale>
                 ))}
@@ -29,11 +29,11 @@ export default function Installations() {
 
               {/* Segunda fila */}
               <div className="grid grid-cols-1 sm:grid-cols-6 lg:grid-cols-6 gap-6 w-full max-w-5xl justify-items-center">
-                <AnimScale className="w-full max-w-68 sm:max-w-none sm:col-span-2 sm:col-start-2 lg:col-span-2 lg:col-start-2">
+                <AnimScale className="w-full max-w-65 sm:max-w-none sm:col-span-2 sm:col-start-2 lg:col-span-2 lg:col-start-2">
                   <FlipCard {...cardsProps[3]} />
                 </AnimScale>
 
-                <AnimScale className="w-full max-w-68 sm:max-w-none sm:col-span-2 sm:col-start-4 lg:col-span-2 lg:col-start-4">
+                <AnimScale className="w-full max-w-65 sm:max-w-none sm:col-span-2 sm:col-start-4 lg:col-span-2 lg:col-start-4">
                   <FlipCard {...cardsProps[4]} />
                 </AnimScale>
               </div>
@@ -46,7 +46,7 @@ export default function Installations() {
             text={buttonText}
             to={buttonLink}
             color="#0097b2"
-            size={{ base: "sm", sm: "sm", lg: "lg" }}
+            size={{ base: "sm", md: "sm", lg: "lg" }}
           />
         </AnimFadeUp>
       </div>

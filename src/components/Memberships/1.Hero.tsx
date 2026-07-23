@@ -1,11 +1,10 @@
 import MembershipsHero from "@/assets/images/Memberships/TeamFamily.webp";
 import { MembershipsContent } from "../../constants/Memberships";
-import Points from "@/assets/images/Memberships/Points.webp";
 import Graphic_Element from "@/assets/images/Memberships/Graphic_Element2.webp";
 import { AnimFadeUp } from "../Animations";
 
 export default function Hero() {
-  const { title, subtitle, imageAlt, pointsImageAlt, graphicImageAlt } = MembershipsContent.hero;
+  const { title, subtitle, imageAlt, graphicImageAlt } = MembershipsContent.hero;
 
   return (
     <section className="relative bg-header-gradient text-white">
@@ -19,16 +18,8 @@ export default function Hero() {
           className="absolute inset-0 h-full w-full object-cover"
         />
 
-        {/* Overlay */}
-        <div className="absolute inset-0 bg-black/30" />
 
-        {/* Patrón de puntos */}
-        <img
-          src={Points}
-          alt={pointsImageAlt}
-          loading="lazy"
-          className="absolute right-4 top-4 z-0 h-20 w-20 opacity-50 sm:right-8 sm:top-6 sm:h-28 sm:w-28 lg:right-16 lg:top-8 lg:h-40 lg:w-40"
-        />
+   
 
         {/* Contenido - ARRIBA A LA IZQUIERDA */}
         <div className="relative z-10 flex w-full items-start px-6 py-10 sm:px-8 sm:py-12 lg:flex-1 lg:px-16 lg:pt-20">
@@ -36,14 +27,14 @@ export default function Hero() {
 
             {/* Título pequeño */}
             <AnimFadeUp>
-              <p className="ml-4 text-left text-sm font-normal text-white sm:ml-12 sm:text-2xl lg:ml-20 lg:text-2xl">
+              <p className="ml-4 text-left  text-white sm:ml-12 lg:ml-20 text-[16px] sm:text-[20px] lg:text-[22px] ">
                 {title}
               </p>
             </AnimFadeUp>
 
             {/* Subtítulo */}
             <AnimFadeUp>
-              <h1 className="ml-4 mt-4 text-2xl font-bold leading-tight sm:ml-12 sm:text-4xl lg:ml-20 lg:text-4xl">
+              <h1 className="ml-4 mt-4 text-2xl font-bold leading-tight sm:ml-12 lg:ml-20  text-[26px] sm:text-[24px] lg:text-[45px]">
                 {subtitle}
               </h1>
             </AnimFadeUp>

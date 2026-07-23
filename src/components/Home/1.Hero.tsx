@@ -27,7 +27,7 @@ export default function Hero() {
               text={buttonText}
               to={buttonLink}
               color="#B20026"
-              size={{base: "sm", sm: "sm", lg:"lg"}}
+              size={{base: "sm", md: "sm", lg:"lg"}}
             />
            
           </AnimFadeUp>

@@ -7,10 +7,10 @@ export default function Steps() {
   const { title, items } = MembershipsContent.steps;
 
   return (
-    <section className="relative overflow-hidden bg-[#F2F4F7] pb-20 pt-14 sm:pb-24 lg:pb-28">
-      <div className="mx-auto px-6 text-center sm:px-10 lg:px-16">
+    <section className="relative overflow-hidden bg-[#F2F4F7] pb-16 sm:pb-28 lg:pb-38 mt-20 lg:mt-40 ">
+      <div className="wrap-90 sm:wrap-80 lg:wrap-70">
         <AnimFadeUp>
-          <h2 className="mx-auto max-w-[300px] text-xl font-extrabold text-[#3C3C3C] sm:max-w-3xl sm:whitespace-nowrap sm:text-2xl lg:text-3xl">
+          <h2 className="font-extrabold text-[#3C3C3C] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
             {title}
           </h2>
         </AnimFadeUp>
@@ -19,10 +19,10 @@ export default function Steps() {
           {items.map(({ id, text }) => (
             <AnimStaggerItem key={id}>
               <div className="flex items-start gap-2.5 sm:gap-3">
-                <span className="text-xl font-extrabold text-[#0097b2] sm:text-[22px] lg:text-[24px]">
+                <span className="text-[16px] text-justify sm:text-[18px]  sm:text-justify lg:text-[28px] lg:text-justify font-extrabold text-[#0097b2] ">
                   {id}
                 </span>
-                <p className="max-w-[240px] pt-0.5 text-left text-base text-[#3C3C3C] sm:max-w-md sm:pt-1 sm:text-xl lg:max-w-lg lg:text-2xl">
+                <p className="text-[15.9px] text-justify sm:text-[18px]  sm:text-justify lg:text-[28px] lg:text-justify text-[#3C3C3C]">
                   {text}
                 </p>
               </div>

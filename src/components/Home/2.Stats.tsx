@@ -38,7 +38,7 @@ export default function StatsBanner() {
         <AnimFadeUp className="mt-8 text-white">
         <ButtonLink text={buttonText} to={buttonLink} 
         color="#0097b2" 
-        size={{base: "sm", sm: "sm", lg:"lg"}} />
+        size={{base: "sm", md: "sm", lg:"lg"}} />
    
         </AnimFadeUp>
 

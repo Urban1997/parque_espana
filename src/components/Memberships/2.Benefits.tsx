@@ -17,36 +17,36 @@ export default function Benefits() {
   const { title, cards } = MembershipsContent.benefits;
 
   return (
-    <section className="bg-[#F2F4F7] px-6 py-14 sm:px-10 lg:px-16 mt-16">
+    <section className="bg-[#F2F4F7] mt-20 lg:mt-40">
       <AnimFadeUp>
-        <h2 className="text-center text-2xl font-extrabold text-[#3C3C3C] sm:text-3xl lg:text-4xl">
+        <h2 className="font-extrabold text-[#3C3C3C] leading-tight text-[22px] sm:text-[24px] lg:text-[34px] lg:font-extrabold">
           {title}
         </h2>
       </AnimFadeUp>
 
-      <div className="relative mx-auto mt-10 max-w-5xl lg:mt-14">
+      <div className="wrap-90 sm:wrap-80 lg:wrap-80">
+        <div className="relative mx-auto mt-10 w-full lg:mt-14">
+          {/* Línea horizontal con gradiente, solo visible desde sm en adelante */}
+          <div className="benefits-line-gradient absolute left-0 right-0 top-8 hidden sm:h-[3px] lg:h-[5px] sm:block" />
 
-        {/* Línea horizontal con gradiente, solo visible desde sm en adelante */}
-        <div className="benefits-line-gradient absolute left-0 right-0 top-8 hidden h-[3px] sm:block" />
-
-        <div className="grid grid-cols-2 gap-y-10 gap-x-6 sm:grid-cols-4 sm:gap-x-6">
-          {cards.map(({ id, name, iconAlt }) => (
-            <AnimFadeUp key={id}>
-              <div className="relative flex flex-col items-center text-center">
-                <img
-                  src={icons[id]}
-                  alt={iconAlt}
-                  loading="lazy"
-                  className="relative z-10 h-12 w-12 object-contain sm:h-15 sm:w-18"
-                />
-                <p className="mt-3 max-w-32.5 text-center text-[16px] font-normal text-[#3C3C3C] sm:max-w-40 sm:text-[22px]">
-                  {name}
-                </p>
-              </div>
-            </AnimFadeUp>
-          ))}
+          <div className="grid grid-cols-2 mt-10 lg:mt-16 gap-y-10 gap-x-6 sm:grid-cols-4 sm:gap-x-6">
+            {cards.map(({ id, name, iconAlt }) => (
+              <AnimFadeUp key={id}>
+                <div className="relative flex flex-col items-center text-center">
+                  <img
+                    src={icons[id]}
+                    alt={iconAlt}
+                    loading="lazy"
+                    className="relative z-10 h-12 w-12 object-contain sm:h-15 sm:w-18 lg:h-20 lg:w-24"
+                  />
+                  <p className="mt-3 text-center text-[16px]  text-[#3C3C3C] sm:max-w-40 sm:text[18px] lg:text-[21px]">
+                    {name}
+                  </p>
+                </div>
+              </AnimFadeUp>
+            ))}
+          </div>
         </div>
-
       </div>
     </section>
   );

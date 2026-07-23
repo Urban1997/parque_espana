@@ -26,14 +26,14 @@ export default function ExperienceBanner() {
                 src={images[index]}
                 alt={item.title}
                 loading="lazy"
-                className="h-14 sm:h-16  lg:h-24 w-auto mx-auto mb-4 sm:mb-6 object-contain"
+                className="h-14 sm:h-16 lg:h-24 w-auto mx-auto mb-4 sm:mb-6 object-contain"
               />
 
               <h3 className="text-[16px] font-semibold mb-3 text-black sm:text-[18px]   lg:w-full lg:text-[21px] lg:mb-5 lg:font-semibold">
                 {item.title}
               </h3>
 
-              <p className=" text-[16px]  text-black  sm:text-[18px] lg:w-full lg:text-[21px] lg:mb1">
+              <p className=" text-[16px]  text-black  sm:text-[17px] lg:w-full lg:text-[21px] lg:mb1">
                 {item.description}
               </p>
             </AnimScale>
