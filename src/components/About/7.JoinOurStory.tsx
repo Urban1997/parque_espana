@@ -27,8 +27,8 @@ export default function Essence() {
             {text}
           </p>
           <div className="mt-14 flex justify-center gap-16">
-            <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size="xl" />
-            <ButtonLink to="" color="#0097B2" text="Ver membresías" size="xl" />
+            <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size={{ sm: "md", lg: "xl"}} />
+            <ButtonLink to="" color="#0097B2" text="Ver membresías" size={{ sm: "md", lg: "xl"}} />
           </div>
         </div>
       </div>
@@ -42,8 +42,8 @@ export default function Essence() {
           {text}
         </p>
         <div className="mt-8 flex flex-col items-center gap-4 text-white">
-          <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size={{ base: "sm", md: "md", lg: "lg" }} />
-          <ButtonLink to="" color="#0097B2" text="Ver membresías" size={{ base: "sm", md: "md", lg: "lg" }} />
+          <ButtonLink to="" color="#029FD4" text="Conocer instalaciones" size={{ base: "sm" }} />
+          <ButtonLink to="" color="#0097B2" text="Ver membresías" size={{ base: "sm" }} />
           
         </div>
       </div>

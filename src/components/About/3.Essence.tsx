@@ -34,13 +34,13 @@ export default function Essence() {
 
         {/* Contenido de texto */}
         <div className="relative z-20 w-full px-6 pt-8 md:w-[70%] md:pl-10 md:pr-8 md:pt-10 lg:pl-30 lg:pr-28 lg:pt-20">
-          <h2 className="text-center text-xl text-[#3C3C3C] font-extrabold leading-tight md:text-2xl lg:text-[34px]">
+          <h2 className="text-center text-xl text-[#3C3C3C] font-extrabold leading-tight sm:text-2xl lg:text-[34px]">
             {title}
           </h2>
-          <p className="mt-4 text-justify text-sm md:mt-6 md:text-lg md:pr-10 lg:pr-0 lg:text-[26px]">
+          <p className="mt-4 text-justify text-sm md:text-lg lg:text-[26px] md:mt-6 sm:pr-10 lg:pr-0 ">
             {text1}
           </p>
-          <p className="mt-4 text-justify text-sm md:mt-6 md:text-lg md:pr-50 lg:pr-0 lg:text-[26px]">
+          <p className="mt-4 text-justify text-sm md:text-lg lg:text-[26px] md:mt-6 sm:pr-50 lg:pr-0">
             {text2}
           </p>
         </div>

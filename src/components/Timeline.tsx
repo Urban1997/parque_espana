@@ -26,7 +26,7 @@ export default function Timeline({ items }: TimelineProps) {
   const lastIndex = items.length - 1;
 
   return (
-    <div className="w-full overflow-visible px-6 py-16 md:px-10 lg:px-20">
+    <div className="w-full overflow-visible px-6 py-16 md:px-10">
 
       {/* ===== Versión horizontal: solo desde lg ===== */}
       <div className="relative hidden lg:flex lg:justify-between">
@@ -66,7 +66,7 @@ export default function Timeline({ items }: TimelineProps) {
                 className={`mt-6 whitespace-nowrap rounded-xl px-8 py-1 text-2xl font-bold text-[#3C3C3C] shadow-lg transition-colors ${
                   isActive
                     ? isLast
-                      ? "bg-[#004AAD]"
+                      ? "bg-[#004AAD] text-white"
                       : "bg-[#F2A900]"
                     : "bg-white"
                 }`}
@@ -125,7 +125,7 @@ export default function Timeline({ items }: TimelineProps) {
                   />
                   <span
                     className={`whitespace-nowrap rounded-xl px-5 py-1 text-lg font-bold text-[#3C3C3C] shadow-lg ${
-                      isLast ? "bg-[#D31E28]" : "bg-[#F2A900]"
+                      isLast ? "bg-[#004AAD] text-white" : "bg-[#F2A900]"
                     }`}
                   >
                     {item.year}
@@ -133,10 +133,10 @@ export default function Timeline({ items }: TimelineProps) {
                 </div>
 
                 <div className="mt-4 rounded-xl bg-[#E5E4E4] p-5 text-left">
-                  <h3 className="text-base font-extrabold text-[#3C3C3C]">
+                  <h3 className="text-base sm:text-lg font-extrabold text-[#3C3C3C]">
                     {item.title}
                   </h3>
-                  <p className="mt-2 text-sm leading-snug text-[#3C3C3C]">
+                  <p className="mt-2 text-sm sm:text-lg leading-snug text-[#3C3C3C]">
                     {item.text}
                   </p>
                 </div>

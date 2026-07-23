@@ -40,9 +40,9 @@ const timelineItems = [
 
 export default function History() {
   return (
-    <section className="px-6 py-16 md:px-10 lg:px-26">
+    <section className="px-6 py-16 sm:px-10 lg:px-26 wrap-90">
 
-      <h2 className="text-center text-3xl font-extrabold lg:text-4xl">
+      <h2 className="text-center text-[22px] sm:text-2xl lg:text-[34px] font-extrabold ">
         Nuestra historia
       </h2>
 

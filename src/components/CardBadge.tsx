@@ -36,10 +36,10 @@ export default function CardBadge({
         className="relative z-10 rounded-2xl p-8 shadow-md"
         style={{ backgroundColor }}
       >
-        <h3 className="text-left text-3xl font-extrabold text-[#D31E28]">
+        <h3 className="text-left text-xl sm:text-2xl lg:text-[34px] font-extrabold text-[#D31E28]">
           {title}
         </h3>
-        <p className="mt-5 text-left text-2xl text-[#3C3C3C] leading-snug">
+        <p className="mt-5 text-left text-sm sm:text-lg lg:text-[24px] text-[#3C3C3C] leading-snug">
           {text}
         </p>
       </div>

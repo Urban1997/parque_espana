@@ -23,7 +23,7 @@ export default function Card({ image, title, text, imageAlt }: CardProps) {
         <h3 className="pl-2 text-left text-lg font-bold leading-tight lg:text-2xl">
           {title}
         </h3>
-        <p className="mt-4 text-left text-sm text-white/90 md:mt-8 lg:text-2xl lg:font-light">
+        <p className="mt-4 text-left text-sm lg:text-[26px] text-white/90 md:mt-8 lg:font-light">
           {text}
         </p>
       </div>

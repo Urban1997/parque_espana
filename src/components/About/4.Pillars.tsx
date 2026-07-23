@@ -7,13 +7,13 @@ import { AboutContent } from "../../constants/About";
 export default function Pillars() {
   const { pillars } = AboutContent.pillars;
   return (
-    <section className="px-6 py-16 md:px-10 lg:px-26">
+    <section className="px-6 py-16 sm:px-10 lg:wrap-90">
 
-      <h2 className="text-center text-3xl font-extrabold lg:text-4xl">
+      <h2 className="text-center text-[22px] sm:text-2xl lg:text-[34px] font-extrabold">
         Nuestros pilares
       </h2>
 
-      <div className="mt-12 flex flex-col gap-6 md:h-105 md:flex-row lg:h-135">
+      <div className="mt-12 flex flex-col gap-6 sm:h-90 md:flex-row lg:h-135">
         <Card
           image={pillar1Img}
           title={pillars[0].title}
